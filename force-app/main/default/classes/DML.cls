@@ -10,7 +10,7 @@ public class DML {
     for (account accup : accupdate) {
       accup.NumberOfEmployees = 12;
     }
-    system.debug(accupdate);
+    system.debug(accupdate1);
     update accupdate;
   }
 
