@@ -1,4 +1,4 @@
-trigger firstTrigger on SOBJECT (before insert) {
+trigger firstTrigger on Account (before insert) {
 
     /*
     // Once Account is created, link one Contact associated to it.
