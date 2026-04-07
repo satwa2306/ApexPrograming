@@ -14,7 +14,7 @@ public with sharing class OOPS_Concepts {
         system.debug('static');
         
         //to check access modifer
-        OOPS.case1();
+       // OOPS.case1();
           
          integer a=10;
         

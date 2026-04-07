@@ -89,7 +89,7 @@ public class SOQL_SOSL {
         // [Select Name, Relationship_FieldName__r.ParentFieldName__c  from ChildObjectName__c]
         // Student__c ----<- Rating__c
         
-        List<Rating__c> rtList = [Select Name, Select_Student__r.Student_Name__c, Select_Student__r.Student_Email_Id__c From Rating__c];
+        //List<Rating__c> rtList = [Select Name, Select_Student__r.Student_Name__c, Select_Student__r.Student_Email_Id__c From Rating__c];
         
         
         // 2. Parent to Child -: Done with the help of 'sub Query', max. 20 subQuery within a Parent Query, but not works for MultiLevel subQuery
@@ -110,7 +110,7 @@ public class SOQL_SOSL {
         // [Select ParentObjectFields__c, (Select childObjectFields__c From ChildRelationship_Field_Name__r) From ParentObjectName__c]
         // Student__c ----<- Rating__c
         // Fetch all the students records with their associated rating records
-        List<Student__c> stList2 = [Select Student_Name__c, (Select Name, Rating_for__c, Rating_out_of_10__c From Ratings__r) From Student__c];
+        //List<Student__c> stList2 = [Select Student_Name__c, (Select Name, Rating_for__c, Rating_out_of_10__c From Ratings__r) From Student__c];
         
         
     }
@@ -121,11 +121,11 @@ public class SOQL_SOSL {
     // {Find 'What' [WhatType] Returning [Where]}
     // dataType - sObject
     // List<List<sObject>>
-    List<List<sObject>> l1 = [Find 'SBI' Returning Account(Name, NumberOfEmployees), Contact(FirstName, LastName), Student_in_Batch__c];
+    //List<List<sObject>> l1 = [Find 'SBI' Returning Account(Name, NumberOfEmployees), Contact(FirstName, LastName), Student_in_Batch__c];
     
-    List<Account> acList = l1[0];
+    //List<Account> acList = l1[0];
     // System.debug(acList);
-    List<Contact> cList = l1[1];
+    //List<Contact> cList = l1[1];
     // system.debug(cList);
     // List<Student_in_Batch__c> = l1[2]; -> Need to check
     

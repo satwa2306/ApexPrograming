@@ -1,4 +1,4 @@
-public class apexCollections {
+public class apexCollections1{
 
   public static void FirstMethod(){
         

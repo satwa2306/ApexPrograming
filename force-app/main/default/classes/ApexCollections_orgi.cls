@@ -1,4 +1,4 @@
-public class ApexCollections {
+public class ApexCollections_orgi {
 public static void myMethod(){
         // integer i = 2,3,4,5;
         
