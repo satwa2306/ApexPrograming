@@ -55,3 +55,44 @@ public class person {
     //
     //
 }
+
+
+/*public class Person {
+    
+    public Person(){
+        System.debug('Default Constructor');
+        
+    }
+    
+    // Parametrized Constructor
+    public Person(string n, integer i, string c, string ad){
+        this.Name = n;
+        this.Age = i;
+        this.City = c;
+        Address = ad;
+    }
+    
+    
+	public string Name;
+    public integer age;
+    public string city;
+    
+    public static string Address;
+    
+    public static void myMethod(){
+        System.debug('Static Method');
+        
+        // System.debug(name);		 // ERROR
+        System.debug(address);
+        
+    }
+    
+    public void myMethod2(){
+        System.debug('Non-Static Method');
+        
+        System.debug(name);		 // null or Prateek
+        System.debug(address);
+        
+    }
+}
+*/
