@@ -1,0 +1,39 @@
+/* Custom styling for the Account List component */
+
+/* Ensure proper spacing for filter controls */
+.slds-align-bottom {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .slds-col {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Data table styling */
+lightning-datatable {
+    min-height: 200px;
+}
+
+/* Error message styling */
+.slds-theme_error h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Loading spinner container */
+.slds-text-align_center {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* No records message */
+.slds-text-color_weak {
+    font-size: 1rem;
+    padding: 2rem 0;
+}
