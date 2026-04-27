@@ -97,7 +97,7 @@ export default class AccountList extends LightningElement {
         }
     }
 
-    // Wire service to get rating picklist values
+    // Wire service to get rating picklist values 
     @wire(getRatingPicklistValues)
     wiredRatings({ error, data }) {
         if (data) {
